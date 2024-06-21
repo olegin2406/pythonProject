@@ -28,6 +28,6 @@ def sort_by_date(inform_state: list[dict[str, Any]], reverse=True) -> list[dict[
     return sorted_inform_state
 
 
-# if __name__ == "__main__":
-#     print(filter_by_state(original_state))
-#     print(sort_by_date(original_state))
+if __name__ == "__main__":
+    print(filter_by_state(original_state))
+    print(sort_by_date(original_state))
