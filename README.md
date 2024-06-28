@@ -12,6 +12,12 @@ git clone https://github.com/username/pythonProject.git
 ```
 poetry install
 ```
+# Тесты:
+В тестах используется концепция TDD, фреимворк pytest и codecoverage.
+
+
+
+
 ## Использование:
 1. Откройте приложение
 2. Начните выполнять
