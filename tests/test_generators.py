@@ -4,6 +4,7 @@ from src.generators import card_number_generator, transaction_descriptions
 
 
 def test_transaction_descriptions():
+    # Тестирование  функции описания
     transactions = [
         {"description": "Перевод организации"},
         {"description": "Перевод со счета на счет"},
@@ -18,13 +19,14 @@ def test_transaction_descriptions():
         "Перевод со счета на счет",
         "Перевод со счета на счет",
         "Перевод с карты на карту",
-        "Перевод организации"
+        "Перевод организации",
     ]
 
     assert descriptions == expected
 
 
 def test_card_number_generator():
+    # Функция тестирования генератора
     generator = card_number_generator(1, 7)
     assert next(generator) == "0000 0000 0000 0001"
     assert next(generator) == "0000 0000 0000 0002"
