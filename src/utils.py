@@ -5,8 +5,11 @@ from typing import Dict, List
 
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-file_formater = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s: %(message)s")
+file_handler = logging.FileHandler("../utills.log", "w")
+file_formatter = logging.Formatter("%(asctime)s - %(filename)s - %(levelname)s: %(message)s")
+file_handler.setFormatter(file_formatter)
+logger.addHandler(file_handler)
+logger.setLevel(logging.INFO)
 
 
 def get_transactions_json(path: str) -> List[Dict]:
