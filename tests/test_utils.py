@@ -1,4 +1,5 @@
-from unittest.mock import patch, mock_open
+from unittest.mock import mock_open, patch
+
 from src.utils import get_transactions_json
 
 
@@ -16,7 +17,7 @@ def test_get_transactions_file_not_exists(mock_os_path_exists):
 # def test_get_transactions_valid_json(mock_os_path_exists):
 #     """
 #     Мок метод os.path.exists и функцию open()
-#     Проверяет, что если файл существует и содержит валидный JSON, возвращается список словарей с данными об операциях.
+#     Проверяет, если файл существует и содержит валидный JSON, возвращается список словарей с данными об операциях.
 #     """
 #     mock_os_path_exists.return_value = True  # задаём фальшивому .exists что он возвращает True
 #

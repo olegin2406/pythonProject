@@ -1,6 +1,5 @@
 import unittest
-from unittest.mock import patch, MagicMock
-
+from unittest.mock import MagicMock, patch
 
 from src.external_api import convert_transaction_to_rubles
 
