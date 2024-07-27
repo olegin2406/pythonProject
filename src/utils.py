@@ -63,9 +63,9 @@ def get_transactions_xlsx(path: str) -> list[dict] | str:
 
 
 # if __name__ == "__main__":
-#     # file_path = "../data/operations.json"
-#     # print(get_transactions_json(file_path))
-#     # file_path = "../data/transactions_excel.xlsx"
-#     # print(get_transactions_xlsx(file_path))
+#     file_path = "../data/operations.json"
+#     print(get_transactions_json(file_path))
+#     file_path = "../data/transactions_excel.xlsx"
+#     print(get_transactions_xlsx(file_path))
 #     file_path = "../data/transactions.csv"
 #     print(get_transactions_csv(file_path))
