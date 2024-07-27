@@ -14,7 +14,7 @@ def get_mask_card_number(card_number: str) -> str:
         logger.info("Маскируем номер карты")
         return card_number[:4] + " " + card_number[4:6] + "** **** " + card_number[-4:]
     except Exception as ex:
-        logger.error(f'Произошла ошибка: {ex}')
+        logger.error(f"Произошла ошибка: {ex}")
 
 
 def get_mask_account(account_number: str) -> str:
@@ -23,7 +23,7 @@ def get_mask_account(account_number: str) -> str:
         logger.info("Маскируем номер счета")
         return "**" + account_number[-4:]
     except Exception as ex:
-        logger.error(f'Произошла ошибка: {ex}')
+        logger.error(f"Произошла ошибка: {ex}")
 
 
 if __name__ == "__main__":
