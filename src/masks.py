@@ -26,6 +26,6 @@ def get_mask_account(account_number: str) -> str:
         logger.error(f"Произошла ошибка: {ex}")
 
 
-if __name__ == "__main__":
-    print(get_mask_card_number("7000792289606361"))
-    print(get_mask_account("73654108430135874305"))
+# if __name__ == "__main__":
+#     print(get_mask_card_number("7000792289606361"))
+#     print(get_mask_account("73654108430135874305"))
